@@ -6,7 +6,11 @@ import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainActivity extends Activity {
+
+    private WorkoutExpart expart = new WorkoutExpart();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,16 @@ public class MainActivity extends Activity {
         Spinner spinner = (Spinner) findViewById(R.id.workoutType);
 
         String string = String.valueOf(spinner.getSelectedItem());
-        textView.setText(string);
+
+        //textView.setText(string);
+
+        List<String> WorkoutList = expart.getWorkouts(string);
+        StringBuilder WorkoutsFormatted = new StringBuilder();
+
+        for (String work : WorkoutList){
+            WorkoutsFormatted.append(work).append('\n');
+        }
+
+        textView.setText(WorkoutsFormatted);
     }
 }
