@@ -2,4 +2,12 @@
     <string name="app_name">WorkoutsAdvisor Example</string>
     <string name="workout">Workout Adviser Area !</string>
     <string name="find_workout">New Button</string>
+
+    <string-array name="workout_type">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Math.</item>
+        <item>Biology</item>
+        <item>Higher Math.</item>
+    </string-array>
 </resources>
