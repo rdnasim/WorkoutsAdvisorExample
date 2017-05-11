@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WorkoutsAdvisor Example</string>
+    <string name="workout">Workout Adviser Area !</string>
+    <string name="find_workout">New Button</string>
 </resources>
